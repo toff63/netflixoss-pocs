@@ -1,0 +1,19 @@
+<html ng-app="phonecatApp">
+<head>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="PhoneListCtrl">
+   
+   <p>Hello, {{name}}!</p>
+   <div ng-view></div>
+    
+  <table>
+  	<tr><th>row number</th></tr>
+  	<tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{i}}</td></tr>
+  </table>
+
+</body>
+</html>

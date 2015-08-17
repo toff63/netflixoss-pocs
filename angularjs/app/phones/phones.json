@@ -1,0 +1,16 @@
+[
+   { 
+   	 "id": "motorola-defy-with-motoblur",
+     "imageUrl": "img/phones/phone0.png",
+   	 "name": "Nexus S",
+     "snippet": "Fast just got faster with Nexus S.",
+     "age": 1
+ 	},
+    {
+	 "id": "motorola-xoom-wifi",
+     "imageUrl": "img/phones/phone0.png",
+     "name": "Motorola XOOM with Wi-Fi",
+     "snippet": "The Next, Next Generation tablet.",
+      "age": 2
+ 	}
+]
