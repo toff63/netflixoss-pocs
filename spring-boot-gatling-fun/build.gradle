@@ -1,0 +1,37 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.5.RELEASE")
+    }
+}
+apply plugin: "maven" 
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+jar {
+    baseName = 'gs-rest-service'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal() 
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile('org.scala-lang:scala-library:2.11.1')
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile('io.gatling:gatling-core:2.1.7')
+	compile('io.gatling:gatling-http:2.1.7')
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
